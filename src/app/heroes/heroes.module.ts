@@ -10,6 +10,7 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { MaterialModule } from '../material/material.module';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
     CommonModule,
     HeroesRoutingModule,
     MaterialModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatProgressBarModule
   ]
 })
 
