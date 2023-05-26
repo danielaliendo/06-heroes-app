@@ -4,7 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Follow next steps to make it works:
+
+1. Run `https://github.com/danielaliendo/06-heroes-app.git` in your terminal for clone project repo
+
+2. Run `npm install` for installing project dependencies. 
+
+3. Run `npm run backend` for a dev backend.
+
+4. Run `npm start` or `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
 
 ## Code scaffolding
 
