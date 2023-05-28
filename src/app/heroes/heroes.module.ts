@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
@@ -10,7 +9,9 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { MaterialModule } from '../material/material.module';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
-import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { ReactiveFormsModule } from "@angular/forms";
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,16 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
     SearchPageComponent,
     NewPageComponent,
     HeroCardComponent,
-    HeroImagePipe
+    HeroImagePipe,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
     MaterialModule,
     NgOptimizedImage,
-    MatProgressBarModule
+    MatProgressBarModule,
+    ReactiveFormsModule
   ]
 })
 
